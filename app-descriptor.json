@@ -15,9 +15,6 @@
         "uninstalled": "/uninstalled"
     },
     "modules": {
-        "oauthConsumer": {
-            "clientId": "{{consumerKey}}"
-        }
     },
     "scopes": ["account", "repository", "pullrequest"],
     "contexts": ["account"]
