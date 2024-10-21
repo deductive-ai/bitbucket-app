@@ -1,0 +1,24 @@
+{
+    "key": "deductive-ai-bitbucket",
+    "name": "Deductive AI",
+    "description": "[Deductive](https://www.deductive.ai/)is the world’s first _inference-based observability platform_ that can help root-cause and mitigate large-scale software outages by reasoning about distributed systems, code, and statistical anomalies in real-time across unprecedented volumes of telemetry data (metrics, logs, traces, and events). Our Github app ingests your github artifacts into a thinking machine, helping improve relevance and thus reducing your MTTR by 100x.",
+    "vendor": {
+        "name": "Deductive AI",
+        "url": "https://deductive.ai/"
+    },
+    "baseUrl": "https://deductive.ai/",
+    "authentication": {
+        "type": "jwt"
+    },
+    "lifecycle": {
+        "installed": "/installed",
+        "uninstalled": "/uninstalled"
+    },
+    "modules": {
+        "oauthConsumer": {
+            "clientId": "{{consumerKey}}"
+        }
+    },
+    "scopes": ["account", "repository", "pullrequest"],
+    "contexts": ["account"]
+}
